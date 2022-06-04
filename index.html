@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+    ZAFFAZ Sisters
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <center>
+        <h1>ZAFFAZ Sisters</h1>
+        <h3>"ZAFFAZ" is a word which derives from 3 sisters' name. It goes in a order sequence with a reverse back.</h3>
+        <hr>
+            <p>Z stands for Zainab</p>
+            <hr>
+          <p>  A stands for Ayesha.</p>
+          <hr>
+           <p> F stands for Fatima.</p>
+           <hr>
+           <label>Webcam View -</label>
+           <div id="camera"></div>
+           <br>
+           <button onclick="capture()" class="btn btn-warning" >Capture</button>
+           <br><br>
+           <label>Output -</label>
+           <div id="result"></div>
+           <br>
+           <button onclick="identify()" class="btn btn-success" >Identify</button>
+           <br><br>
+           <p style="font-size: 22px;">Name: <span id="result_name"></span></p>
+           <p style="font-size: 22px;">Accuracy: <span id="result_name_accuracy"></span></p>
+    </center>
+</body>
+
+
+
+</html>
